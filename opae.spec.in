@@ -186,6 +186,8 @@ ldconfig
 @CMAKE_INSTALL_PREFIX@/bin/hssi
 @CMAKE_INSTALL_PREFIX@/bin/dummy_afu
 @CMAKE_INSTALL_PREFIX@/bin/hello_fpga
+@CMAKE_INSTALL_PREFIX@/bin/hello_cxxcore
+@CMAKE_INSTALL_PREFIX@/bin/object_api
 %dir @CMAKE_INSTALL_PREFIX@/include/opae
 @CMAKE_INSTALL_PREFIX@/include/opae/*
 %dir @CMAKE_INSTALL_PREFIX@/share/opae
@@ -218,6 +220,7 @@ ldconfig
 @CMAKE_INSTALL_PREFIX@/@OPAE_LIB_INSTALL_DIR@/opae/libboard_n3000.so*
 @CMAKE_INSTALL_PREFIX@/@OPAE_LIB_INSTALL_DIR@/opae/libboard_d5005.so*
 @CMAKE_INSTALL_PREFIX@/@OPAE_LIB_INSTALL_DIR@/opae/libboard_a10gx.so*
+@CMAKE_INSTALL_PREFIX@/@OPAE_LIB_INSTALL_DIR@/opae/libv-opae.so*
 
 
 %files tools-extra -f tools-extra-files.txt
@@ -236,6 +239,7 @@ ldconfig
 @CMAKE_INSTALL_PREFIX@/bin/fpga_dma_N3000_test
 @CMAKE_INSTALL_PREFIX@/bin/fpgabist
 @CMAKE_INSTALL_PREFIX@/bin/fecmode
+@CMAKE_INSTALL_PREFIX@/bin/bist
 @CMAKE_INSTALL_PREFIX@/bin/fecmode
 @CMAKE_INSTALL_PREFIX@/bin/fpgamac
 @CMAKE_INSTALL_PREFIX@/bin/fpgastats
@@ -272,6 +276,7 @@ ldconfig
 @CMAKE_INSTALL_PREFIX@/bin/afu_sim_setup
 @CMAKE_INSTALL_PREFIX@/bin/with_ase
 @CMAKE_INSTALL_PREFIX@/@OPAE_LIB_INSTALL_DIR@/libase*
+@CMAKE_INSTALL_PREFIX@/@OPAE_LIB_INSTALL_DIR@/libopae-c-ase*
 %dir @CMAKE_INSTALL_PREFIX@/share/opae
 %dir @CMAKE_INSTALL_PREFIX@/share/opae/ase/
 %dir @CMAKE_INSTALL_PREFIX@/share/opae/ase/*
